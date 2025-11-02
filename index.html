@@ -2,93 +2,256 @@
 <html lang="en">
 
 <head>
-      
     <meta charset="UTF-8" />
-      
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Healthy Life Nutrition | Diet Coach</title>
-      
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FreshPath Nutrition — Meal Plans & Coaching</title>
     <link rel="stylesheet" href="styles.css" />
+    <meta name="description"
+        content="FreshPath Nutrition offers personalized meal plans and one-on-one diet coaching for students and busy professionals." />
 </head>
 
 <body>
-      <!-- Header -->
-      <header>
-            <h1>Healthy Life Nutrition</h1>
-            <p>Your personal diet coach for a balanced, sustainable lifestyle.</p>
-          </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <!-- Navigation -->
-      <nav>
-            <a href="#about">About</a>
-            <a href="#plans">Meal Plans</a>
-            <a href="#contact">Contact</a>
-          </nav>
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Primary">
+            <a class="logo" href="#top" aria-label="FreshPath Nutrition home">
+                FreshPath<span>Nutrition</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" aria-label="Open menu" />
+            <label class="burger" for="menu-toggle" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </label>
 
-      <!-- About Section -->
-      <section id="about">
-            <h2>About Me</h2>
-            <p>
-                  Hi! I'm Sarah, a certified nutritionist with over 8 years of experience helping clients reach
-                  their health goals through personalized meal plans and holistic guidance.
-                </p>
-            <p>
-                  Whether your goal is weight loss, muscle gain, or simply eating healthier, I’m here to guide
-                  you every step of the way.
-                </p>
-          </section>
+            <ul class="nav-links">
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#plans">Meal Plans</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="btn cta" href="#contact">Book Free Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <!-- Meal Plans Section -->
-      <section id="plans">
-            <h2>Meal Plans</h2>
-            <div class="plan-container">
-                  <div class="plan">
-                        <h3>Basic Plan</h3>
-                        <p>Customized 7-day meal plan tailored to your goals.</p>
-                        <ul>
-                              <li>Calorie & nutrient breakdown</li>
-                              <li>Simple, affordable ingredients</li>
-                              <li>Email support included</li>
-                            </ul>
-                        <p class="price">$49</p>
-                      </div>
+    <main id="main">
 
-                  <div class="plan">
-                        <h3>Premium Plan</h3>
-                        <p>4-week program with ongoing feedback and progress tracking.</p>
-                        <ul>
-                              <li>Weekly check-ins</li>
-                              <li>Flexible meal adjustments</li>
-                              <li>Exclusive recipe library access</li>
-                            </ul>
-                        <p class="price">$149</p>
-                      </div>
-                </div>
-          </section>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Eat Better. Feel Better. Live Better.</h1>
+                    <p>One-on-one nutrition coaching and customized meal plans tailored to your goals, preferences, and
+                        lifestyle.</p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#contact">Start Your Plan</a>
+                        <a class="btn ghost" href="#plans">See Sample Meal Plans</a>
+                    </div>
+                </div>
+                <div class="hero-visual" role="img" aria-label="Fresh produce and wholesome foods illustration"></div>
+            </div>
+        </section>
 
-      <!-- Contact Section -->
-      <section id="contact">
-            <h2>Contact</h2>
-            <p>Interested in starting your nutrition journey? Get in touch!</p>
+        <!-- Programs / Services -->
+        <section id="programs" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <h2>Programs & Services</h2>
+                    <p class="lead">Choose the support level that fits you. All plans include check-ins, habit coaching,
+                        and recipe ideas.</p>
+                </header>
 
-            <div class="contact-info">
-                  <p><strong>Email:</strong> sarah@healthylife.com</p>
-                  <p><strong>Phone:</strong> (555) 123-4567</p>
-                  <p><strong>Location:</strong> New York, NY</p>
-                </div>
+                <div class="cards grid-4">
+                    <article class="card">
+                        <h3>Kickstart <span class="badge">4 weeks</span></h3>
+                        <p>Goal setting, one custom meal plan, weekly check-ins.</p>
+                        <p class="price">$149</p>
+                    </article>
 
-            <form>
-                  <input type="text" placeholder="Your Name" required />
-                  <input type="email" placeholder="Your Email" required />
-                  <textarea rows="4" placeholder="Your Message"></textarea>
-                  <button type="submit">Send Message</button>
-                </form>
-          </section>
+                    <article class="card">
+                        <h3>Accountability <span class="badge">8 weeks</span></h3>
+                        <p>Bi-weekly plans, grocery lists, chat support.</p>
+                        <p class="price">$299</p>
+                    </article>
 
-      <!-- Footer -->
-      <footer>
-            <p>© 2025 Healthy Life Nutrition. All rights reserved.</p>
-          </footer>
+                    <article class="card">
+                        <h3>Transform <span class="badge">12 weeks</span></h3>
+                        <p>Fully personalized plans, weekly calls, progress reviews.</p>
+                        <p class="price">$449</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Add-ons</h3>
+                        <ul class="ticks">
+                            <li>Pantry makeover</li>
+                            <li>Grocery tour</li>
+                            <li>Family plan <em>(+ $49/plan)</em></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sample Meal Plans -->
+        <section id="plans" class="section alt">
+            <div class="container">
+                <header class="section-head">
+                    <h2>Sample Meal Plans</h2>
+                    <p class="lead">All plans can be dairy-free, gluten-free, or low-FODMAP upon request.</p>
+                </header>
+
+                <div class="cards grid-3">
+                    <article class="card">
+                        <h3>Balanced Weight-Loss <span class="badge">≈ 1,800 kcal</span></h3>
+                        <ul class="bullets">
+                            <li><strong>Breakfast:</strong> Greek yogurt parfait with berries & granola</li>
+                            <li><strong>Lunch:</strong> Grilled chicken, quinoa, roasted veggies, lemon-olive dressing
+                            </li>
+                            <li><strong>Snack:</strong> Apple with peanut butter</li>
+                            <li><strong>Dinner:</strong> Salmon, sweet potato, side salad</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3>Muscle Gain <span class="badge">≈ 2,400 kcal</span></h3>
+                        <ul class="bullets">
+                            <li><strong>Breakfast:</strong> Oats with whey, banana, almonds</li>
+                            <li><strong>Lunch:</strong> Turkey rice bowl with avocado & salsa</li>
+                            <li><strong>Snack:</strong> Cottage cheese with pineapple</li>
+                            <li><strong>Dinner:</strong> Beef stir-fry with brown rice & broccoli</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3>Vegetarian High-Fiber <span class="badge">≈ 2,000 kcal</span></h3>
+                        <ul class="bullets">
+                            <li><strong>Breakfast:</strong> Tofu scramble wrap</li>
+                            <li><strong>Lunch:</strong> Lentil salad with feta & cucumbers</li>
+                            <li><strong>Snack:</strong> Hummus & carrots</li>
+                            <li><strong>Dinner:</strong> Chickpea pasta with tomato-basil sauce</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div class="about-photo" role="img" aria-label="Headshot placeholder of dietitian"></div>
+                <div class="about-copy">
+                    <h2>Science-Based. Habit-Focused. Human.</h2>
+                    <p>Hi! I’m <strong>Maya Chen, MS, RDN</strong> — a registered dietitian and behavioral-change coach.
+                        I combine evidence-based nutrition with simple habit systems so you can eat well without
+                        tracking forever. My approach is inclusive, budget-friendly, and culture-aware.</p>
+                    <ul class="badges">
+                        <li>RDN</li>
+                        <li>Academy of Nutrition and Dietetics</li>
+                        <li>Precision Nutrition L1</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="section alt">
+            <div class="container">
+                <header class="section-head">
+                    <h2>What Clients Say</h2>
+                </header>
+
+                <div class="quotes">
+                    <figure>
+                        <blockquote>“Maya’s plans fit my 9-to-5 and I finally stopped yo-yo dieting.”</blockquote>
+                        <figcaption>— Jordan P.</figcaption>
+                    </figure>
+                    <figure>
+                        <blockquote>“Meal prep got easier and my energy is way up.”</blockquote>
+                        <figcaption>— Lena R.</figcaption>
+                    </figure>
+                    <figure>
+                        <blockquote>“Gained 5 lbs of lean mass without feeling stuffed.”</blockquote>
+                        <figcaption>— Chris A.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <h2>Ready to feel your best?</h2>
+                    <p>Book a free 15-minute consultation. Tell us about your goals and we’ll suggest the right program.
+                    </p>
+
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> <a href="mailto:zhangzhi19@gmail.com">zhangzhi19@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+15558673042">(555) 867-3042</a></li>
+                        <li><strong>Office:</strong> 144-55 roosevelt ave, flushing, NY</li>
+                        <li><strong>Hours:</strong> Mon–Fri 9:00–5:00</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form" aria-label="Contact form" action="#" method="post">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" type="tel" placeholder="(555) 867-3042" />
+                    </div>
+
+                    <div class="field">
+                        <label for="goal">Goal</label>
+                        <select id="goal" name="goal">
+                            <option>Weight loss</option>
+                            <option>Muscle gain</option>
+                            <option>Improve energy</option>
+                            <option>Digestive health</option>
+                            <option>General wellness</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us a bit about you…"></textarea>
+                    </div>
+
+                    <label class="consent">
+                        <input type="checkbox" required />
+                        I agree to the processing of my information according to the privacy notice.
+                    </label>
+
+                    <button class="btn primary wide" type="submit" aria-disabled="true">Send Message</button>
+                    <p class="form-note">Note: This is a demo form. Submissions are not stored without a backend.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="foot-brand">
+                <a class="logo" href="#top">FreshPath<span>Nutrition</span></a>
+                <p>© 2025 FreshPath Nutrition. All rights reserved.</p>
+            </div>
+            <ul class="social">
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="YouTube">YouTube</a></li>
+            </ul>
+            <a class="back-to-top" href="#top">Back to top ↑</a>
+        </div>
+    </footer>
 </body>
 
 </html>
